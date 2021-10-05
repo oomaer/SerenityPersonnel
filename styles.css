@@ -77,7 +77,8 @@ a{
     background-blend-mode: normal;
     background-position: center ;
     background-size: cover;
-    min-height: 85vh;
+    height: 85vh;
+    max-height: 800px;
     /* width: 100vw; */
     background-repeat: no-repeat;
 }
@@ -86,7 +87,7 @@ a{
     color: var(--color-2);
     margin-top: 3rem;
     letter-spacing: 1px;
-    width: 50vw;
+    width: 50%;
 }
 .cover-content h1{
     text-shadow:  rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -259,5 +260,21 @@ footer{
     .cover-para{
         font-size: 0.8rem;
     }
+    .video-container{
+        max-width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
+}
+
+@media only screen and (min-width: 2000px){
+    .custom-container{
+        max-width: 1920px !important;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+    .home-cover{
+        background-size: contain;
+    }
 }
